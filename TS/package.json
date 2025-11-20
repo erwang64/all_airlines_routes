@@ -1,0 +1,30 @@
+{
+  "name": "planefinder-scraper",
+  "version": "1.0.0",
+  "description": "Scraper pour extraire les numéros de vol depuis planefinder.net",
+  "main": "scraper.ts",
+  "scripts": {
+    "start": "tsx scraper.ts",
+    "scrape:lcg": "tsx scraper.ts LCG departures",
+    "scrape:lcg:arrivals": "tsx scraper.ts LCG arrivals",
+    "scrape:global": "tsx global-routes-scraper.ts",
+    "build": "tsc",
+    "dev": "tsx watch scraper.ts"
+  },
+  "keywords": [
+    "scraper",
+    "puppeteer",
+    "flights",
+    "planefinder"
+  ],
+  "author": "",
+  "license": "MIT",
+  "dependencies": {
+    "puppeteer": "^24.15.0"
+  },
+  "devDependencies": {
+    "@types/node": "^22.10.2",
+    "tsx": "^4.19.2",
+    "typescript": "^5.7.2"
+  }
+}
